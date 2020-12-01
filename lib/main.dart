@@ -6,7 +6,7 @@ import "package:flutter/material.dart";
 
 //create an entry point for my application
 void main() {
-  //runApp() shows whatever we pass in a parameter
+  //runApp() it inflates the widget and shows it on the app screen. this means that it shows whatever we pass in a parameter
   //it expects a widget
   //Center widget ==> centralizes what ever parameter that is inside
 	runApp(
