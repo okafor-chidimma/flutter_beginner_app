@@ -1,20 +1,22 @@
-//this allows us to import external files or packages into our file
-//material.dart is a library developed by google that contains widgets that implements material design.
-//material design is a design language that provides guidelines for all applications to follow
-//so by importing this lib, we get access to widgets that follow the material design guidelines, to build out our own application
-import "package:flutter/material.dart";
+//this main follows angela yu's tutorial
 
-//create an entry point for my application
+import 'package:flutter/material.dart';
+
 void main() {
-  //runApp() it inflates the widget and shows it on the app screen. this means that it shows whatever we pass in a parameter
-  //it expects a widget
-  //Center widget ==> centralizes what ever parameter that is inside
-	runApp(
-		Center(
-			child: Text(
-				"Hello Flutter",
-				textDirection: TextDirection.ltr
-		  ),
-		)
-	);
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: "I am so fucking rich",
+    home: Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("I am Rich")),
+        backgroundColor: Colors.blueGrey[900],
+      ),
+      backgroundColor: Colors.blueGrey,
+      body: Center(
+        child: Image(
+          image: AssetImage("images/diamond.png"),
+        ),
+      ),
+    ),
+  ));
 }

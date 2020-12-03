@@ -1,0 +1,26 @@
+Material design is a design pattern or guidelines to follow when designing an application such as mobile, web or even desktop application
+Material designs also contains already designed components such as icons, or even colours that follow these guidelines and those components are made available in flutter via the MaterialApp() widget.
+MaterialApp() widget gives you access to a lot material widgets,as well as Material colours, Material Icons
+MaterialApp() is almost always the root widget of every mobile application, as it also provides some internal configurations for the application.
+Scaffold() widget provides a framework for the visual layout of our application. it also follows the Material design pattern
+It is used to group widgets for each page of the mobile application
+Scaffold() also exposes several other components such as appBar 
+PS: if i am putting something on the screen that is going to show up, it is always going to be a widget
+
+ADDING AN IMAGE TO YOUR PROJECT
+can be from a network path or from your folder in your project and for both we make use of the image() widget
+
+For the network provided image
+image(
+    image: NetworkImage(image url as a string)
+) 
+
+For the File provided image
+a. first create a folder in the root directory of your project
+b. add your image files
+c. go the pubspec.yaml file and indicate that the project will be loading images from the project and specify the image folder, if it is many images or direct image path if the it is just one image
+d. Click on download icon, to get the image into your flutter application
+e. use the image() as shown below
+image(
+    image: AssetImage(image url as a string)
+) 
